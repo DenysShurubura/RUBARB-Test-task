@@ -1,39 +1,39 @@
 @font-face {
   font-family: 'Myriad Pro';
-  src: url("/fonts/MyriadPro-Regular.woff2"),
-  url("/fonts/MyriadPro-Regular.woff");
+  src: url("fonts/MyriadPro-Regular.woff2"),
+  url("fonts/MyriadPro-Regular.woff");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Myriad Pro';
-  src: url("/fonts/MyriadPro-Light.woff2"),
-  url("/fonts/MyriadPro-Light.woff");
+  src: url("fonts/MyriadPro-Light.woff2"),
+  url("fonts/MyriadPro-Light.woff");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Myriad Pro';
-  src: url("/fonts/MyriadPro-Bold.woff2"),
-  url("/fonts/MyriadPro-Bold.woff");
+  src: url("fonts/MyriadPro-Bold.woff2"),
+  url("fonts/MyriadPro-Bold.woff");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Myriad Pro';
-  src: url("/fonts/MyriadPro-Semibold.woff2"),
-  url("/fonts/MyriadPro-Semibold.woff");
+  src: url("fonts/MyriadPro-Semibold.woff2"),
+  url("fonts/MyriadPro-Semibold.woff");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Myriad Pro';
-  src: url("/fonts/MyriadPro-Black.woff2"),
-  url("/fonts/MyriadPro-Black.woff");
+  src: url("fonts/MyriadPro-Black.woff2"),
+  url("fonts/MyriadPro-Black.woff");
   font-weight: 900;
   font-display: swap;
   font-style: normal;
@@ -125,7 +125,13 @@ body {
   text-decoration: none;
 }
 
+.burger {
+  display: none;
+}
 
+.menu {
+  display: none;
+}
 
 .contacts {
   display: flex;
@@ -232,7 +238,7 @@ body {
     padding-top: 9px;
     text-align: center;
     padding-bottom: 10px;
-    
+
     font-size: 20px;
     color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0);
@@ -393,39 +399,39 @@ body {
   text-transform: uppercase;
 }
 
-.performance-top-header::before, 
+.performance-top-header::before,
 .performance-top-header::after {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	content: '';
-	z-index: -1;
-	margin: 0px;
-	box-shadow: inset 0 0 0 3px #BFE2FF;
-	animation: anim-ramka-3 8s linear infinite; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    z-index: -1;
+    margin: 0px;
+    box-shadow: inset 0 0 0 3px #BFE2FF;
+    animation: anim-ramka-3 8s linear infinite;
 }
 .performance-top-header::before {
-	animation-delay: -4s;
+    animation-delay: -4s;
 }
-.performance-top-header:hover::after, 
+.performance-top-header:hover::after,
 .performance-top-header:hover::before {
-	background-color: #BFE2FF;
+    background-color: #BFE2FF;
 }
 @keyframes anim-ramka-3 {
-	0%, 100% {
-		clip: rect(0px, 330px, 3px, 0px);
-	}
-	25% {
-		clip: rect(0px, 3px, 105px, 0px);
-	}
-	50% {
-		clip: rect(100px, 330px, 105px, 0px);
-	}
-	75% {
-		clip: rect(0px, 330px, 105px, 330px);
-	}
+    0%, 100% {
+        clip: rect(0px, 330px, 3px, 0px);
+    }
+    25% {
+        clip: rect(0px, 3px, 105px, 0px);
+    }
+    50% {
+        clip: rect(100px, 330px, 105px, 0px);
+    }
+    75% {
+        clip: rect(0px, 330px, 105px, 330px);
+    }
 }
 
 
@@ -433,7 +439,7 @@ body {
   width: 560px;
   height: 390px;
   margin-left: 100px;
-  background: center / contain no-repeat url(/img/perfomancebg.jpeg);
+  background: center / contain no-repeat url(img/perfomancebg.jpeg);
   z-index: -2;
 }
 
@@ -482,39 +488,39 @@ body {
   font-size: 27px;
   text-transform: uppercase;
 }
-.performance-bottom-header::before, 
+.performance-bottom-header::before,
 .performance-bottom-header::after {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	content: '';
-	z-index: -1;
-	margin: 0px;
-	box-shadow: inset 0 0 0 3px #BFE2FF;
-	animation: anim-ramka-3 8s linear infinite; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    z-index: -1;
+    margin: 0px;
+    box-shadow: inset 0 0 0 3px #BFE2FF;
+    animation: anim-ramka-3 8s linear infinite;
 }
 .performance-bottom-header::before {
-	animation-delay: -4s;
+    animation-delay: -4s;
 }
-.performance-bottom-header:hover::after, 
+.performance-bottom-header:hover::after,
 .performance-bottom-header:hover::before {
-	background-color: #BFE2FF;
+    background-color: #BFE2FF;
 }
 @keyframes anim-ramka-3 {
-	0%, 100% {
-		clip: rect(0px, 330px, 3px, 0px);
-	}
-	25% {
-		clip: rect(0px, 3px, 105px, 0px);
-	}
-	50% {
-		clip: rect(100px, 330px, 105px, 0px);
-	}
-	75% {
-		clip: rect(0px, 330px, 105px, 330px);
-	}
+    0%, 100% {
+        clip: rect(0px, 330px, 3px, 0px);
+    }
+    25% {
+        clip: rect(0px, 3px, 105px, 0px);
+    }
+    50% {
+        clip: rect(100px, 330px, 105px, 0px);
+    }
+    75% {
+        clip: rect(0px, 330px, 105px, 330px);
+    }
 }
 
 
@@ -525,7 +531,7 @@ body {
   margin-right: 100px;
   z-index: -2;
 
-  background: center / cover no-repeat url(/img/perfomancesecondbg.jpeg);
+  background: center / cover no-repeat url(img/perfomancesecondbg.jpeg);
 }
 
 .performance-bottom-text {
@@ -533,7 +539,7 @@ body {
   text-align: end;
   font-size: 16px;
   margin-top: 200px;
-  margin-right: 30px;
+  padding-right: 30px;
 }
 
 .bottom-btn {
@@ -549,7 +555,7 @@ body {
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px;
-  background: center / cover no-repeat url(/img/feedbackbg.jpg);
+  background: center / cover no-repeat url(img/feedbackbg.jpg);
 }
 
 .feedback-contacts-item {
@@ -727,6 +733,12 @@ body {
     margin-right: 5px;
     margin-left: 5px;
     font-size: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .introduction-container {
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .contacts {
     font-size: 13px;
@@ -734,9 +746,54 @@ body {
   .lenguage {
     font-size: 13px;
   }
+  .feedback-massageus-item input {
+    width: 180px;
+  }
+  .feedback-massageus-bottom-item textarea {
+    width: 600px;
+  }
+  .feedback-contacts {
+    margin-right: 100px;
+  }
+  .performance-top-img {
+    width: 460px;
+    height: 310px;
+    margin-left: 100px;
+  }
+  .performance-top-header {
+    font-size: 24px;
+  }
+  .performance-bottom-img {
+    width: 460px;
+    height: 310px;
+    margin-left: 100px;
+  }
+  .performance-bottom-header {
+    font-size: 24px;
+  }
+  .header {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .lenguage {
+    padding-right: 10px;
+  }
+  .header img {
+    padding-left: 19px;
+  }
+  .slider-next {
+    left: 95%;
+  }
+  .slider-prev {
+    right: 95%;
+  }
 }
 
 @media (max-width: 1024px) {
+  
+  .header img {
+    margin-left: 50px;
+  }
   .introduction-logo {
     margin-right: 50px;
   }
@@ -745,5 +802,272 @@ body {
   }
   .sticky-block p {
     font-size: 27px;
+  }
+  .feedback-massageus-item input {
+    width: 130px;
+  }
+  .feedback-massageus-bottom-item textarea {
+    width: 450px;
+  }
+  .feedback-contacts {
+    margin-right: 50px;
+  }
+  .main-slider {
+    top: 20%;
+  }
+  .navbar-container {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .lenguage {
+    display: none;
+  }
+
+  /* burger -------------------------------> */
+
+  .burger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .burger span, .burger span:before, .burger span:after {
+    width: 100%;
+    position: absolute;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    display: block;
+    transition: .3s;
+    border-radius: 5px;
+  }
+  .burger span:before {
+    content: "";
+    top: -10px;
+    transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .burger span {
+    top: 20px;
+  }
+  .burger span:after{
+    content: "";
+    bottom: -10px;
+    transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .burger span.active:before{
+    content: "";
+    top: 0px;
+    transform: rotate(45deg);
+    transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .burger span.active:after{
+    content: "";
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .burger span.active{
+    background: rgba(255, 255, 255, 0); 
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.096);
+    color: #ccc;
+    padding: 10px;
+    position: fixed;
+    top: 90px;
+    left: -320px;
+    transition: left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .menu.animate{
+    left: 0;
+  }
+  .menu a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .menu a:hover {
+    background-color: rgba(0, 0, 0, 0.473);;
+  }
+  .menu-contactsitem {
+    margin-bottom: 10px;
+    color: #53D0FB;
+  }
+  .menu-lenguage {
+    color: #53D0FB;
+  }
+}
+
+@media (max-width: 840px) {
+  .performance-top-img {
+    width: 360px;
+    height: 200px;  
+    margin-left: 0px;
+  }
+  .performance-top-text {
+    margin-top: 130px;
+  }
+  .performance-top-header {
+    text-align: center;
+    width: 230px;
+    height: 80px;
+    background-color: #ffffff73;
+    border: 2px solid #53D0FB;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  .performance-top-header::before,
+  .performance-top-header::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: '';
+      z-index: -1;
+      margin: 0px;
+      box-shadow: inset 0 0 0 3px #BFE2FF;
+      animation: anim-ramka-3 8s linear infinite;
+  }
+  .performance-top-header::before {
+      animation-delay: -4s;
+  }
+  .performance-top-header:hover::after,
+  .performance-top-header:hover::before {
+      background-color: #BFE2FF;
+  }
+  @keyframes anim-ramka-3 {
+      0%, 100% {
+          clip: rect(0px, 230px, 3px, 0px);
+      }
+      25% {
+          clip: rect(0px, 3px, 80px, 0px);
+      }
+      50% {
+          clip: rect(80px, 230px, 105px, 0px);
+      }
+      75% {
+          clip: rect(0px, 230px, 80px, 230px);
+      }
+  }
+  .performance-bottom-img {
+    width: 360px;
+    height: 200px;
+    margin-right: 30px;
+  }
+  .performance-bottom-text {
+    margin-top: 130px;
+    padding-right: 50px;
+  }
+  .performance-bottom-header {
+    text-align: center;
+    width: 230px;
+    height: 80px;
+    background-color: #ffffff73;
+    border: 2px solid #53D0FB;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  .performance-bottom-header::before,
+  .performance-bottom-header::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: '';
+      z-index: -1;
+      margin: 0px;
+      box-shadow: inset 0 0 0 3px #BFE2FF;
+      animation: anim-ramka-3 8s linear infinite;
+  }
+  .performance-bottom-header::before {
+      animation-delay: -4s;
+  }
+  .performance-bottom-header:hover::after,
+  .performance-bottom-header:hover::before {
+      background-color: #BFE2FF;
+  }
+  @keyframes anim-ramka-3 {
+      0%, 100% {
+          clip: rect(0px, 230px, 3px, 0px);
+      }
+      25% {
+          clip: rect(0px, 3px, 80px, 0px);
+      }
+      50% {
+          clip: rect(80px, 230px, 105px, 0px);
+      }
+      75% {
+          clip: rect(0px, 230px, 80px, 230px);
+      }
+  }
+  .leng-icons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .leng-block {
+    padding-bottom: 20px;
+    align-items: center;
+  }
+  .sticky-block img {
+    width: 200px;
+  }
+  .sticky-block p {
+    font-size: 18px;
+  }
+  .feedback-contacts-item {
+    margin-bottom: 25px;
+    font-size: 13px;
+  }
+  .feedback-contacts h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .feedback-massageus h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .feedback-massageus-item input {
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .feedback-massageus-bottom-item textarea {
+    width: 360px;
+    height: 150px;
+    font-size: 13px;
+  }
+  .feedback-contacts {
+    margin-right: 50px;
   }
 }

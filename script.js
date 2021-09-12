@@ -46,3 +46,8 @@ function rollSlider() {
     sliderLine.style.transform = 'translate(-' + count * width + 'px)';
 
 }
+
+document.querySelector('.burger').addEventListener('click', function(){
+    document.querySelector('.burger span').classList.toggle('active');
+    document.querySelector('.menu').classList.toggle("animate");
+  })
