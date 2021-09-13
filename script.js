@@ -16,9 +16,9 @@ function init() {
         item.style.height = 'auto';
     });
     btnSize.forEach(item => {
-        item.style.width = width / 8 + 'px';
+        item.style.width = width / 7 + 'px';
         item.style.height = 'auto';
-        item.style.fontSize = width / 95 + 'px';
+        item.style.fontSize = width / 90 + 'px';
     });
 };
 
